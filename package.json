@@ -2,7 +2,30 @@
   "name": "sandhour",
   "private": true,
   "version": "0.1.0",
-  "description": "A desert-styled day planner widget for the desktop",
+  "description": "A quiet, local-first day planner and to-do widget for the Windows desktop, with a word of the day for language learners",
+  "keywords": [
+    "day-planner",
+    "todo",
+    "task-manager",
+    "desktop-widget",
+    "productivity",
+    "local-first",
+    "offline",
+    "language-learning",
+    "word-of-the-day",
+    "tauri",
+    "react",
+    "sqlite",
+    "windows"
+  ],
+  "homepage": "https://github.com/tsupikovn/sandhour#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tsupikovn/sandhour.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tsupikovn/sandhour/issues"
+  },
   "license": "MIT",
   "type": "module",
   "scripts": {

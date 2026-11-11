@@ -1,14 +1,36 @@
 # Sandhour
 
-A small, quiet day planner that lives on your desktop. One narrow window, a
-desert palette, no accounts and no cloud — your tasks stay in a local SQLite
-file on your machine.
+**A quiet day planner for your Windows desktop.** Sandhour is a free,
+open-source to-do widget: one narrow window with today's tasks, a calendar, a
+place for unfinished things, and a new word every day in the language you are
+learning.
+
+No account, no subscription, no cloud. The planner works offline and your data
+stays in a local SQLite file on your own computer; the AI features are optional
+and use your own API key.
+
+It is built for people who want a short list for *today* rather than a project
+management system — and who would like the leftovers to get out of the way by
+themselves.
 
 <p>
   <img src="docs/today-dark.jpg" alt="Today tab: birthday reminder, word of the day and the month calendar" width="270">
   <img src="docs/tasks-dark.jpg" alt="Calendar day panel and today's tasks" width="270">
   <img src="docs/settings-light.jpg" alt="Settings in the light theme" width="270">
 </p>
+
+## Why you might like it
+
+- **Every morning starts clean.** Unfinished tasks move to the Attic at the
+  end of the day instead of piling up as overdue.
+- **Typing is enough.** Write `dentist fri 3pm` and the date and time are
+  understood — no date pickers.
+- **Capture from anywhere.** One shortcut saves a thought without leaving the
+  app you are in.
+- **A small daily habit.** One word a day in Spanish, Turkish, Italian, French,
+  German, Portuguese, Chinese, Japanese, Korean, Russian — or any language you
+  type in.
+- **Private by design.** Local-first; an AI key is optional and is your own.
 
 ## What it does
 

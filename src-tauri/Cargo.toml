@@ -1,7 +1,9 @@
 [package]
 name = "sandhour"
 version = "0.1.0"
-description = "Sandhour — a desert-styled day planner widget for the desktop"
+description = "Sandhour — a quiet, local-first day planner widget for the desktop"
+license = "MIT"
+repository = "https://github.com/tsupikovn/sandhour"
 authors = ["tsupikovn"]
 edition = "2021"
 
