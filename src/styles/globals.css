@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@300;400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Palette as RGB channels so Tailwind's rgb(var(--x) / <alpha-value>) works.
+   Default = dark (night desert). */
+:root,
+[data-theme='dark'] {
+  --dune-bg-primary: 28 27 24;
+  --dune-bg-secondary: 37 36 31;
+  --dune-bg-tertiary: 47 45 39;
+
+  --dune-text-primary: 232 226 213;
+  --dune-text-secondary: 168 162 148;
+  --dune-text-muted: 107 103 96;
+
+  --dune-border-primary: 61 58 51;
+  --dune-border-subtle: 47 45 39;
+
+  --dune-accent: 209 123 71;
+  --dune-accent-muted: 139 82 48;
+
+  --dune-success: 139 157 110;
+  --dune-warning: 201 168 118;
+  --dune-danger: 194 107 71;
+
+  /* True red, reserved for birthday reminders. */
+  --dune-red: 235 88 84;
+}
+
+/* Inverted light theme (day desert): light-beige background, warm-gray text. */
+[data-theme='light'] {
+  --dune-bg-primary: 245 239 227;
+  --dune-bg-secondary: 237 230 215;
+  --dune-bg-tertiary: 224 216 198;
+
+  --dune-text-primary: 85 82 76;
+  --dune-text-secondary: 124 119 109;
+  --dune-text-muted: 164 156 142;
+
+  --dune-border-primary: 200 187 160;
+  --dune-border-subtle: 221 212 194;
+
+  --dune-accent: 184 98 58;
+  --dune-accent-muted: 139 74 45;
+
+  --dune-success: 107 122 79;
+  --dune-warning: 168 134 96;
+  --dune-danger: 160 80 47;
+
+  --dune-red: 181 40 32;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: rgb(var(--dune-bg-primary));
+  color: rgb(var(--dune-text-primary));
+  overflow: hidden;
+  margin: 0;
+  /* Smooth, weighty theme switch. */
+  transition: background-color 0.4s ease, color 0.4s ease;
+  /* Disable native text selection cursor for a more "app" feel; inputs re-enable it. */
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+input,
+textarea,
+[contenteditable='true'] {
+  user-select: text;
+  -webkit-user-select: text;
+}
+
+/* Thin overlay scrollbar: invisible by default, revealed only while the cursor
+   is over a scrollable area (i.e. when you're actually browsing overflow). */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 0;
+  transition: background 0.3s ease;
+}
+*:hover::-webkit-scrollbar-thumb {
+  background: rgb(var(--dune-border-primary));
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(var(--dune-text-muted));
+}
